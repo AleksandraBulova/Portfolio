@@ -1,0 +1,99 @@
+body {
+  background-color: #000;
+}
+
+.content {
+  margin: auto;
+  width: 1400px;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  background-image: url(/assets/images/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px 0 330px 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.head ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 31px;
+  list-style: none;
+}
+
+.head a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.en, .ru {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+}
+
+.en {
+  color: #bdae82;
+}
+
+.language span {
+  color: #fff;
+}
+
+.hero {
+  margin: 160px 0 0 60px;
+  width: 500px;
+  height: 330px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 47px;
+}
+
+.hero p {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  line-height: 40px;
+  margin-bottom: 25px;
+  width: 470px;
+  height: 120px;
+}
+
+.hireMe {
+  color: #000;
+  background-color: #bdae82;
+  width: 220px;
+  height: 55px;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+}
