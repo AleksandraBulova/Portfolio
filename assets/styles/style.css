@@ -97,3 +97,68 @@ h1 {
   font-family: Inter, sans-serif;
   font-weight: normal;
 }
+
+.skills_block {
+  position: relative;
+  width: 700px;
+  height: 80px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.line {
+  position: absolute;
+  z-index: 1;
+  background-color: #bdae82;
+  width: 700px;
+  height: 2px;
+  top: 39px;
+}
+
+.skills_block h2 {
+  font-size: 40px;
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  color: #bdae82;
+  background-color: #000;
+  padding: 0 20px;
+  left: 274px;
+  top: 17px;
+}
+
+.skills_items {
+  display: flex;
+  gap: 40px;
+}
+
+.skills_items img {
+  margin-bottom: 50px;
+}
+
+.skills_list {
+  text-align: center;
+  width: 320px;
+}
+
+.skills_list dt {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.skills_list dd {
+  margin: 0;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  width: 280px;
+  margin: auto;
+}
