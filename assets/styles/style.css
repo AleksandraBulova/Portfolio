@@ -261,3 +261,87 @@ h1 {
   height: 55px;
   cursor: pointer;
 }
+
+.contact {
+  background-image: url(/assets/images/bg-contact.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 60px 0 195px 0;
+}
+
+.contact div {
+  display: flex;
+  justify-content: end;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.contact textarea {
+  margin-bottom: 10px;
+}
+
+.contact h2 {
+  margin: 0;
+  font-size: 40px;
+  color: #bdae82;
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+  background: none;
+  border: 2px solid #bdae82;
+  color: #bdae82;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  height: 50px;
+}
+
+::placeholder {
+  color: #bdae82;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+}
+
+.contact textarea {
+  height: 100px;
+  min-width: 450px;
+  max-width: 450px;
+}
+
+.contact button {
+  background-color: #bdae82;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  width: 220px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+.end span {
+  color: #fff;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+}
+
+.messengers {
+  display: flex;
+  gap: 20px;
+}
