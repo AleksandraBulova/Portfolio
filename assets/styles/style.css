@@ -96,9 +96,11 @@ h1 {
   font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: normal;
+  border: none;
 }
 
-.skills_block {
+.skills_block, 
+.portfolio_block {
   position: relative;
   width: 700px;
   height: 80px;
@@ -116,7 +118,8 @@ h1 {
   top: 39px;
 }
 
-.skills_block h2 {
+.skills_block h2,
+.portfolio_block h2 {
   font-size: 40px;
   font-family: Merriweather, sans-serif;
   font-weight: bold;
@@ -161,4 +164,40 @@ h1 {
   color: #fff;
   width: 280px;
   margin: auto;
+}
+
+.portfolio_block h2 {
+  left: 240px;
+}
+
+.buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+
+.buttons_container button {
+  width: 220px;
+  height: 55px;
+  color: #bdae82;
+  background-color: #000;
+  border: 2px solid #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+}
+
+.buttons_container button.active {
+  background-color: #bdae82;
+  border: none;
+  color: #000;
+}
+
+.portfolio_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  row-gap: 25px;
 }
