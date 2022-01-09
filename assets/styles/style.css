@@ -101,7 +101,8 @@ h1 {
 
 .skills_block, 
 .portfolio_block,
-.video_block {
+.video_block,
+.price_block {
   position: relative;
   width: 700px;
   height: 80px;
@@ -121,7 +122,8 @@ h1 {
 
 .skills_block h2,
 .portfolio_block h2,
-.video_block h2 {
+.video_block h2,
+.price_block h2 {
   font-size: 40px;
   font-family: Merriweather, sans-serif;
   font-weight: bold;
@@ -205,6 +207,57 @@ h1 {
   row-gap: 25px;
 }
 
-.video_portfolio {
-  
+.price_block h2{
+  left: 279px;
+}
+
+.prise_list {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+.price_selection {
+  border: 2px solid #bdae82;
+  width: 450px;
+  height: 505px;
+  text-align: center;
+
+}
+
+.price_selection h3, p{
+  color: #fff;
+}
+
+.price_selection h3 {
+  font-size: 28px;
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+  margin: 43px 0 40px 0;
+}
+
+.price_selection p {
+  font-size: 18px;
+  line-height: 36px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  margin: 40px 0 50px 0;
+}
+
+.price_selection span {
+  color: #bdae82;
+  font-size: 24px;
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+}
+
+.price_selection button {
+  color: #000;
+  background-color: #bdae82;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  border: none;
+  width: 220px;
+  height: 55px;
+  cursor: pointer;
 }
