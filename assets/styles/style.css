@@ -45,6 +45,11 @@ header {
   text-decoration: none;
   font-family: Inter, sans-serif;
   font-weight: normal;
+  transition: 0.3s;
+}
+
+.head a:hover {
+  color: #bdae82;
 }
 
 .language {
@@ -199,11 +204,12 @@ h1 {
   font-family: Inter, sans-serif;
   font-weight: normal;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.buttons_container button.active {
+.buttons_container button.active,
+.buttons_container button:hover {
   background-color: #bdae82;
-  border: none;
   color: #000;
 }
 
@@ -300,6 +306,7 @@ h1 {
   height: 50px;
   outline: none;
   padding: 0 20px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 ::placeholder {
@@ -328,7 +335,28 @@ h1 {
   font-weight: normal;
 }
 
+.github {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.github a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .messengers {
   display: flex;
   gap: 20px;
+  transition: 0.3s;
+}
+
+.messengers a:hover svg path {
+  fill: #bdae82;
+}
+
+.github a:hover {
+  color: #bdae82;
 }
