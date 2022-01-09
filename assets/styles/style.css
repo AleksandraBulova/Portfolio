@@ -100,7 +100,8 @@ h1 {
 }
 
 .skills_block, 
-.portfolio_block {
+.portfolio_block,
+.video_block {
   position: relative;
   width: 700px;
   height: 80px;
@@ -119,7 +120,8 @@ h1 {
 }
 
 .skills_block h2,
-.portfolio_block h2 {
+.portfolio_block h2,
+.video_block h2 {
   font-size: 40px;
   font-family: Merriweather, sans-serif;
   font-weight: bold;
@@ -187,6 +189,7 @@ h1 {
   line-height: 40px;
   font-family: Inter, sans-serif;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .buttons_container button.active {
@@ -200,4 +203,8 @@ h1 {
   flex-wrap: wrap;
   gap: 25px;
   row-gap: 25px;
+}
+
+.video_portfolio {
+  
 }
