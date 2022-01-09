@@ -18,14 +18,19 @@ header {
   padding: 20px 0 330px 0;
 }
 
-.head {
-  display: flex;
+.space-between {
   justify-content: space-between;
 }
 
 .logo {
   height: 50px;
   width: 50px;
+}
+
+.head {
+  position: fixed;
+  top: 20px;
+  width: 1400px;
 }
 
 .head ul {
@@ -47,15 +52,16 @@ header {
   align-items: center;
 }
 
-.en, .ru {
+.language button {
   background: none;
   border: none;
   color: #fff;
   font-family: Inter, sans-serif;
   font-weight: normal;
+  cursor: pointer;
 }
 
-.en {
+.en.active {
   color: #bdae82;
 }
 
@@ -88,7 +94,7 @@ h1 {
   height: 120px;
 }
 
-.hireMe {
+.button {
   color: #000;
   background-color: #bdae82;
   width: 220px;
@@ -97,6 +103,7 @@ h1 {
   font-family: Inter, sans-serif;
   font-weight: normal;
   border: none;
+  cursor: pointer;
 }
 
 .skills_block, 
@@ -251,17 +258,6 @@ h1 {
   font-weight: bold;
 }
 
-.price_selection button {
-  color: #000;
-  background-color: #bdae82;
-  font-family: Inter, sans-serif;
-  font-weight: normal;
-  border: none;
-  width: 220px;
-  height: 55px;
-  cursor: pointer;
-}
-
 .contact {
   background-image: url(/assets/images/bg-contact.png);
   background-position: center center;
@@ -302,6 +298,8 @@ h1 {
   font-family: Inter, sans-serif;
   font-weight: normal;
   height: 50px;
+  outline: none;
+  padding: 0 20px;
 }
 
 ::placeholder {
@@ -315,26 +313,15 @@ h1 {
   height: 100px;
   min-width: 450px;
   max-width: 450px;
+  padding-top: 10px;
 }
 
-.contact button {
-  background-color: #bdae82;
-  border: none;
-  color: #000;
-  font-size: 20px;
-  width: 220px;
-  height: 55px;
-  cursor: pointer;
-}
-
-.end {
-  display: flex;
-  justify-content: space-between;
+.footer {
   align-items: center;
   padding: 50px 0 50px 0;
 }
 
-.end span {
+.footer span {
   color: #fff;
   font-size: 20px;
   font-family: Inter, sans-serif;
