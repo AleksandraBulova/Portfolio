@@ -25,6 +25,11 @@ header {
 .logo {
   height: 50px;
   width: 50px;
+  transition: 0.3s;
+}
+
+.logo:hover svg path {
+  fill: #bdae82;
 }
 
 .head {
@@ -109,6 +114,11 @@ h1 {
   font-weight: normal;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  color: #fff;
 }
 
 .skills_block, 
@@ -207,8 +217,11 @@ h1 {
   transition: 0.3s;
 }
 
-.buttons_container button.active,
 .buttons_container button:hover {
+  color: #fff;
+}
+
+.buttons_container button.active {
   background-color: #bdae82;
   color: #000;
 }
