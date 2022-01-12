@@ -389,7 +389,7 @@ p {
 @media screen and (max-width: 1400px) {
   .content {
     margin: auto;
-    width: 768px;
+    width: 100%;
   }
 
   nav {
@@ -437,6 +437,7 @@ p {
     font-size: 32px;
     left: 118px;
   }
+
   .portfolio_block h2 {
     left: 90px;
   }
@@ -452,16 +453,18 @@ p {
 
   .buttons_container {
     flex-wrap: wrap;
-    margin-left: 50px;
+    margin: auto;
+    margin-bottom: 60px;
     width: 669px;
   }
 
   .portfolio_list {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .video_portfolio img {
-    width: 768px;
+    width: 100%;
   }
 
   .price_selection {
@@ -491,5 +494,103 @@ p {
   }
   .contact input {
     width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: auto;
+  }
+
+  .button {
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .head {
+    width: 352px;
+  }
+
+  .hero {
+    margin-top: 200px;
+    width: 200px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    width: 250px;
+    line-height: 20px;
+  }
+
+  .skills_block,
+  .portfolio_block,
+  .video_block,
+  .price_block {
+    width: 250px;
+  }
+
+  .line {
+    width: 250px;
+  }
+
+  .skills_block h2,
+  .portfolio_block h2,
+  .video_block h2,
+  .price_block h2 {
+    font-size: 25px;
+    left: 75px;
+    top: 23px;
+  }
+
+  .portfolio_block h2 {
+    left: 54px;
+  }
+
+  .price_block h2 {
+    left: 75px;
+  }
+
+  .portfolio_list img {
+    width: 350px;
+  }
+
+  .buttons_container {
+    row-gap: 5px;
+    width: 400px;
+  }
+
+  .price_selection {
+    width: 350px;
+  }
+
+  .price_selection h3 {
+    font-size: 24px;
+  }
+
+  .price_selection p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .price_selection span {
+    font-size: 20px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact input {
+    width: 320px;
+  }
+
+  .contact textarea {
+    min-width: 320px;
+    max-width: 320px;
   }
 }
