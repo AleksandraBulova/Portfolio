@@ -149,7 +149,8 @@ h1 {
   background-color: #bdae82;
   width: 700px;
   height: 2px;
-  top: 39px;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .skills_block h2,
@@ -165,8 +166,9 @@ h1 {
   color: #bdae82;
   background-color: #000;
   padding: 0 20px;
-  left: 274px;
-  top: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .skills_items {
@@ -200,10 +202,6 @@ h1 {
   color: #fff;
   width: 280px;
   margin: auto;
-}
-
-.portfolio_block h2 {
-  left: 240px;
 }
 
 .buttons_container {
@@ -241,11 +239,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  row-gap: 25px;
-}
-
-.price_block h2 {
-  left: 279px;
 }
 
 .prise_list {
@@ -401,7 +394,11 @@ p {
   }
 
   .head {
-    width: 700px;
+    width: 100%;
+  }
+
+  .head .flex {
+    margin-right: 60px;
   }
 
   .hero {
@@ -435,15 +432,6 @@ p {
   .video_block h2,
   .price_block h2 {
     font-size: 32px;
-    left: 118px;
-  }
-
-  .portfolio_block h2 {
-    left: 90px;
-  }
-
-  .price_block h2 {
-    left: 121px;
   }
 
   .skills_items {
@@ -455,7 +443,7 @@ p {
     flex-wrap: wrap;
     margin: auto;
     margin-bottom: 60px;
-    width: 669px;
+    width: 620px;
   }
 
   .portfolio_list {
@@ -497,19 +485,11 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    margin: auto;
-  }
-
+@media screen and (max-width: 767px) {
   .button {
     width: 190px;
     height: 50px;
     font-size: 18px;
-  }
-
-  .head {
-    width: 352px;
   }
 
   .hero {
@@ -543,25 +523,13 @@ p {
   .video_block h2,
   .price_block h2 {
     font-size: 25px;
-    left: 75px;
-    top: 23px;
-  }
-
-  .portfolio_block h2 {
-    left: 54px;
-  }
-
-  .price_block h2 {
-    left: 75px;
-  }
-
-  .portfolio_list img {
-    width: 350px;
   }
 
   .buttons_container {
     row-gap: 5px;
-    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .price_selection {
@@ -592,5 +560,96 @@ p {
   .contact textarea {
     min-width: 320px;
     max-width: 320px;
+  }
+
+  .portfolio_list img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .skills,
+  .portfolio,
+  .video,
+  .price {
+    padding-top: 50px;
+  }
+
+  .button {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding-top: 110px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    line-height: 18px;
+    height: 80px;
+  }
+
+  .skills_block,
+  .portfolio_block,
+  .video_block,
+  .price_block,
+  .line {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .skills_block h2,
+  .portfolio_block h2,
+  .video_block h2,
+  .price_block h2 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .skills_list dt {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .skills_list dd {
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  .price_selection {
+    width: 300px;
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+
+  .contact input {
+    width: 200px;
+  }
+
+  .contact textarea {
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 17px;
+  }
+
+  ::placeholder {
+    font-size: 17px;
   }
 }
