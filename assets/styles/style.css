@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
 }
@@ -121,7 +125,14 @@ h1 {
   color: #fff;
 }
 
-.skills_block, 
+.skills,
+.portfolio,
+.video,
+.price {
+  padding-top: 100px;
+}
+
+.skills_block,
 .portfolio_block,
 .video_block,
 .price_block {
@@ -129,7 +140,6 @@ h1 {
   width: 700px;
   height: 80px;
   margin: auto;
-  margin-top: 100px;
   margin-bottom: 60px;
 }
 
@@ -234,7 +244,7 @@ h1 {
   row-gap: 25px;
 }
 
-.price_block h2{
+.price_block h2 {
   left: 279px;
 }
 
@@ -251,7 +261,8 @@ h1 {
   text-align: center;
 }
 
-.price_selection h3, p{
+.price_selection h3,
+p {
   color: #fff;
 }
 
@@ -282,6 +293,7 @@ h1 {
   background-position: center center;
   background-repeat: no-repeat;
   padding: 60px 0 195px 0;
+  margin-top: 150px;
 }
 
 .contact div {
@@ -374,63 +386,63 @@ h1 {
   color: #bdae82;
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width: 1400px) {
   .content {
     margin: auto;
     width: 768px;
   }
 
   nav {
-  display: none;
+    display: none;
   }
 
   .logo {
-  margin-left: 60px;
+    margin-left: 60px;
   }
 
   .head {
-  width: 700px;
+    width: 700px;
   }
 
   .hero {
-  margin-top: 168px;
-  width: 390px;
+    margin-top: 168px;
+    width: 390px;
   }
 
-  .hero h1{
-  font-size: 32px;
+  .hero h1 {
+    font-size: 32px;
   }
 
   .hero p {
-  font-size: 20px;
-  width: 390px;
-  line-height: 24px;
+    font-size: 20px;
+    width: 390px;
+    line-height: 24px;
   }
 
-  .skills_block, 
+  .skills_block,
   .portfolio_block,
   .video_block,
   .price_block {
-  width: 364px;
+    width: 364px;
   }
 
   .line {
-  width: 364px;
+    width: 364px;
   }
 
   .skills_block h2,
   .portfolio_block h2,
   .video_block h2,
   .price_block h2 {
-  font-size: 32px;
-  left: 118px;
+    font-size: 32px;
+    left: 118px;
   }
-  .portfolio_block h2{
-  left: 90px;
+  .portfolio_block h2 {
+    left: 90px;
   }
 
-  .price_block h2{
-  left: 121px;
+  .price_block h2 {
+    left: 121px;
   }
 
   .skills_items {
@@ -440,7 +452,7 @@ h1 {
 
   .buttons_container {
     flex-wrap: wrap;
-    margin-left: 50px ;
+    margin-left: 50px;
     width: 669px;
   }
 
@@ -448,7 +460,7 @@ h1 {
     justify-content: center;
   }
 
-  .video_portfolio img{
+  .video_portfolio img {
     width: 768px;
   }
 
