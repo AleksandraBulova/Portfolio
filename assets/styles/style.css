@@ -385,8 +385,79 @@ p {
     width: 100%;
   }
 
-  nav {
+  .burger {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .munu_btn {
+    display: block;
+    position: relative;
+    position: fixed;
+    top: 20px;
+    width: 1400px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .munu_btn span,
+  .munu_btn span::before,
+  .munu_btn span::after {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .munu_btn span::before,
+  .munu_btn span::after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+  }
+
+  .munu_btn span::before {
+    transform: translateY(-5px);
+  }
+
+  .munu_btn span::after {
+    transform: translateY(5px);
+  }
+
+  .munu_btn.active span {
+    height: 0;
+  }
+
+  .munu_btn.active span::before {
+    transform: rotate(45deg);
+  }
+
+  .munu_btn.active span::after {
+    transform: rotate(-45deg);
+  }
+
+  .nav {
     display: none;
+  }
+
+  .flex ul {
+    display: block;
+    margin: 0;
+    padding: 50px 50px 0 10px;
+    line-height: 50px;
+  }
+
+  .nav.active {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-color: black;
   }
 
   .logo {
