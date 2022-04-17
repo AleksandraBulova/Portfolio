@@ -44,7 +44,8 @@ body {
 }
 
 header {
-  background-image: url(./assets/images/bg.png);
+/*   background-image: url(./assets/images/bg.png); */
+  background-image: url("https://aleksandrabulova.github.io/Portfolio/assets/images/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   padding: 20px 0 330px 0;
@@ -369,7 +370,8 @@ p {
 }
 
 .contact {
-  background-image: url(/assets/images/bg-contact.png);
+/*   background-image: url(/assets/images/bg-contact.png); */
+  background-image:url("https://aleksandrabulova.github.io/Portfolio/assets/images/bg-contact.png");
   background-position: center center;
   background-repeat: no-repeat;
   padding: 60px 0 195px 0;
